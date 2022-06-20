@@ -30,7 +30,7 @@ namespace XafFileDataLoading.Module.Win.Controllers
         protected override void OnViewControlsCreated()
         {
             base.OnViewControlsCreated();
-            var FileDataEditor=this.View.FindItem("File");
+            var FileDataEditor=this.View.FindItem(nameof(DomainObject1.File));
             var FileDataEditorControl=FileDataEditor.Control as FileDataEdit;
             FileDataEditorControl.Modified += FileDataEditorControl_Modified;
             // Access and customize the target View control.
